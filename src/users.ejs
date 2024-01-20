@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>EJS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <h1>List of users</h1>
+    <table>
+        <thead>
+            <tr>
+            <th>Username</th>
+            <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let i = 0; i < users.length; i++) { %>
+            <tr>
+            <td><%= users[i].username %></td>
+            <td><%= users[i].password %></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+
+  </body>
